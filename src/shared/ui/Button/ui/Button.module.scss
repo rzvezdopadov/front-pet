@@ -1,0 +1,107 @@
+.Button {
+    display: flex;
+    align-items: center;
+    color: var(--text);
+    border-radius: 34px;
+    padding: 6px 16px;
+    margin: auto;
+    cursor: pointer;
+    &:hover { 
+        opacity: 0.75;
+    }
+ }
+
+.clear {
+    border: none;
+    background: none;
+    outline: none;
+
+    &.normal:hover {
+        background: var(--icon);
+    }
+
+    &.success:hover {
+        background: var(--save);
+    }
+
+    &.error:hover {
+        background: var(--cancel);
+    }
+}
+    
+.filled {
+    background: var(--light-bg);
+    border: none;
+    outline: none;
+    
+    &.normal {
+        background: var(--icon);
+    }
+
+    &.success {
+        background: var(--save);
+    }
+
+    &.error {
+        background: var(--cancel);
+    }
+}
+
+.outline {
+    background: none;
+
+    &:hover {
+        border: 2px solid var(--accent);
+    }
+
+    &.normal {
+        border: 2px solid var(--icon);
+    }
+
+    &.success {
+        border: 2px solid var(--save);
+    }
+
+    &.error {
+        border: 2px solid var(--cancel);
+    }
+}
+
+.square {
+    border-radius: 0;
+}
+
+.m {
+    font: var(--font-m);
+}
+
+.l {
+    font: var(--font-l);
+}
+
+.xl {
+    font: var(--font-xl);
+}
+
+.disabled {
+    opacity: 0.75;
+    cursor: auto;
+}
+
+.fullWidth {
+    width: 100%;
+}
+
+.withAddon {
+    padding: 0 16px;
+}
+
+.addonLeft, .addonRight {
+    display: flex;
+}
+
+.addonRight svg, .addonLeft svg {
+    color: var(--hint);
+}
+
+
