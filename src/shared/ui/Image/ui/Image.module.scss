@@ -1,0 +1,15 @@
+.Image {
+    background-size: cover;
+}
+
+.rounded {
+    border-radius: 100%;
+}
+
+.border {
+    outline: solid 2px var(--icon);
+}
+
+.button:hover .Icon {
+    color: var(--accent);
+}
