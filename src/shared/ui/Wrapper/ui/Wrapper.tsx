@@ -1,5 +1,5 @@
 import { DetailedHTMLProps, HTMLAttributes, ReactNode } from 'react';
-import { classNames, Mods } from '@/shared/lib/classNames/classNames';
+import { classNames, Mods } from '../../../lib/classNames/classNames';
 import cls from './Wrapper.module.scss';
 
 export type FlexJustify = 'start' | 'center' | 'end' | 'between';
@@ -38,7 +38,7 @@ type DivProps = DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement
 
 export interface FlexProps extends DivProps {
     className?: string;
-    children: ReactNode;
+    children?: ReactNode;
     justify?: FlexJustify;
     align?: FlexAlign;
     direction?: FlexDirection;
